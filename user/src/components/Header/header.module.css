@@ -1,0 +1,12 @@
+.header {
+  /* background-color: #000; */
+  background-color: transparent;
+  height: 68px;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  width: 112px;
+  cursor: pointer;
+}

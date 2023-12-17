@@ -1,0 +1,24 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.sidebar {
+  position: fixed;
+  background-color: purple;
+  height: 100%;
+  width: 240px;
+  top: 0;
+  left: 0;
+  padding: 6px 14px;
+  .navList {
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}

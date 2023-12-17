@@ -1,0 +1,145 @@
+.movieRowContainer {
+  background-color: var(--background-color);
+  color: var(--white);
+  padding: 20px 20px 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  font-size: 18px;
+  user-select: none;
+  color: #fff;
+}
+
+.MoviesSlider {
+  display: grid;
+  gap: 10px;
+  transition: all 0.3s linear;
+  user-select: none;
+  overflow-y: hidden;
+  overflow-x: auto;
+  overflow: hidden;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 1200px) {
+  .MoviesSlider {
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .MoviesSlider {
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .MoviesSlider {
+  }
+}
+
+.movieItem {
+  transform: scale(1);
+  max-width: 400px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s linear;
+  user-select: none;
+  overflow: hidden;
+  border-radius: 6px;
+  transform: center left;
+  position: relative;
+  opacity: 0.8;
+}
+
+.movieItem:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  opacity: 1;
+}
+
+.itemImg {
+  width: 100%;
+  height: 263px;
+  object-fit: cover;
+}
+
+.movieName {
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 28px;
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.btnLeft {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  z-index: 20;
+  transform-origin: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100px;
+  width: 50px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transform: translateY(-20%);
+}
+
+.btnLeft:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.btnLeft:hover svg {
+  opacity: 1;
+  transform: all 0.3s linear;
+}
+
+svg {
+  opacity: 0.7;
+  font-size: 50px;
+  transition: all 0.3s linear;
+}
+
+.btnRight {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  z-index: 20;
+  transform-origin: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100px;
+  width: 50px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transform: translateY(-20%);
+}
+
+.btnRight:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.btnRight:hover svg {
+  opacity: 1;
+  transform: all 0.3s linear;
+}
+
+svg {
+  opacity: 0.7;
+  font-size: 50px;
+  transition: all 0.3s linear;
+}
